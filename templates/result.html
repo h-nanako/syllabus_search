@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<h1 style="text-align: center">推薦科目提案システム</h1>
+{% endblock %}
+
+{% block body %}
+    <h1 style="text-align: center">検索結果</h1>
+    <p style="text-align: center">「{{name}}」の検索結果は以下の通りです<p>
+    <table align="center" border="1">
+        <tr>
+            <th>科目名</th>
+        </tr>
+        {% for syllabus_name in syllabus %}
+        <tr>
+            <td align="center">{{syllabus_name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <form action="/" method="GET">
+        <div style="text-align: center">
+        <input type="submit" value="Topページへ戻る"> </div>
+    </form>
+{% endblock %}

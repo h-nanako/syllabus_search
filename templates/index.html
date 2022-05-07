@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<h1 style="text-align: center">推薦科目提案システム</h1>
+{% endblock %}
+
+{% block body %}
+<p style="text-align: center">単語を入力してください。それに合う科目を提案します。<p>
+    <form action="/result" method="POST", autocomplete="off"> <!--POST送信すると/resultにアクセスされる-->
+		<div style="text-align: center">
+			<label for="name">単語：</label>
+			<input type="text" id="name" name="name" placeholder="(例) Python、Java">
+			<input type="submit" value="検索">
+		</div>	
+	</form>
+{% endblock %}
