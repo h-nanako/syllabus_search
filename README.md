@@ -1,4 +1,8 @@
 # syllabus_search
 大学のシラバスデータを活用した科目提案をWebアプリで実装しました。
-データの学習にはDov2Vecを使用しています。
-app.pyを実行すると、flaskでウェブアプリが起動します。
+
+vector.model
+Dov2Vecを使用してシラバス内の文書を学習させています。
+
+app.py (mainとなるコード)
+flaskでウェブアプリが起動します。
